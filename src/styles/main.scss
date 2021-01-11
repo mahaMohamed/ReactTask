@@ -1,0 +1,85 @@
+$button-color: red;
+
+
+body{
+  @media screen and (max-width: 780px){
+    background-color: lightblue;
+  }
+ 
+
+  overflow: hidden;
+}
+
+
+.App{
+  display: flex;
+  flex-direction: column-reverse;
+
+ 
+}
+
+.generic{
+  margin-bottom: 100px;
+  color: pink;
+}
+
+.counter {
+
+  display: flex;
+  margin: 100px auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+
+  > div:first-child {
+    font-size: 100px;
+  }
+
+  a {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .controls {
+    display: flex;
+    flex-direction: row;
+
+    span, div, button{
+      @media screen and (max-width: 780px){
+        visibility: hidden;
+      }
+    }
+
+    > div , button{
+      min-width: 40px;
+      height: 40px;
+      text-align: center;
+      background: #fff;
+      color: grey;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 5px 0 5px;
+      cursor: pointer;
+    }
+
+    button{
+      padding: 5px;
+      margin: 5px;
+    }
+
+    button:hover{
+      background-color: grey;
+      color: white;
+    }
+  }
+
+}
+
+
